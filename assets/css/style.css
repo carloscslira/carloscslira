@@ -155,7 +155,7 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { background: var(--white-1); }
 
 
 
@@ -167,8 +167,8 @@ body { background: var(--smoky-black); }
 
 .sidebar,
 article {
-  background: var(--eerie-black-2);
-  border: 1px solid var(--jet);
+  background: var(--white-1);
+  border: 1px solid hsl(0deg 0% 0%);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
@@ -224,7 +224,7 @@ article.active {
 .h3,
 .h4,
 .h5 {
-  color: var(--white-2);
+  color: var();
   text-transform: capitalize;
 }
 
@@ -274,7 +274,7 @@ article.active {
 
 .content-card {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--white-1);
   padding: 15px;
   padding-top: 45px;
   border-radius: 14px;
@@ -287,7 +287,7 @@ article.active {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: var(--white-2);
   border-radius: inherit;
   z-index: -1;
 }
@@ -337,8 +337,8 @@ main {
 }
 
 .info-content .name {
-  color: var(--white-2);
-  font-size: var(--fs-3);
+  color: var();
+  font-size: var(--fs-);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
@@ -416,14 +416,14 @@ main {
 }
 
 .contact-title {
-  color: var(--light-gray-70);
+  color: var();
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
 }
 
 .contact-info :is(.contact-link, time, address) {
-  color: var(--white-2);
+  color: var(--wh);
   font-size: var(--fs-7);
 }
 
@@ -498,7 +498,7 @@ main {
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
-  color: var(--light-gray);
+  color: var();
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -524,8 +524,9 @@ main {
 
 .service-item {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--eerie-black-);
   padding: 20px;
+  border: 1px solid hsl(0deg 0% 0%);
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
@@ -535,10 +536,12 @@ main {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: var(-);
   border-radius: inherit;
   z-index: -1;
 }
+
+::before {}
 
 .service-icon-box { margin-bottom: 10px; }
 
@@ -549,7 +552,7 @@ main {
 .service-item-title { margin-bottom: 7px; }
 
 .service-item-text {
-  color: var(--light-gray);
+  color: var(--eerie-black-2);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
@@ -796,7 +799,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: hsl(45deg 93.65% 43.19%);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -824,7 +827,7 @@ main {
 }
 
 .timeline-text {
-  color: var(--light-gray);
+  color: var(--light-gra);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
