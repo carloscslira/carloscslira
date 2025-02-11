@@ -733,8 +733,11 @@ main {
 
 .clients-list {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: stretch;
   gap: 15px;
   margin: 0 -15px;
   padding: 25px;
@@ -752,12 +755,12 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
-  filter: grayscale(1);
+  width: 200px;
+  filter: grayscale(0);
   transition: var(--transition-1);
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.clients-item img:hover { filter: grayscale(1); }
 
 
 
