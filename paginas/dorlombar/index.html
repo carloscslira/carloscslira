@@ -392,7 +392,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- Texto "Agende" -->
       <text x="32" y="12" fill="#FFF" font-family="Arial, sans-serif" class="whatsapp-text">Agendar</text>
       <!-- Texto "sua consulta" -->
-      <text x="32" y="22" fill="#FFF" font-family="Arial, sans-serif" class="whatsapp-text">Consulta!</text>
+      <text x="32" y="24" fill="#FFF" font-family="Arial, sans-serif" class="whatsapp-text">Consulta!</text>
     </svg>
   </a>
 </div>
@@ -441,10 +441,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   }
 
-  /* Ajustes para telas médias (entre 600px e 1200px) */
-  @media (max-width: 1200px) {
+
+ @media (max-width: 1200px) {
     .floating-button {
       width: 18vw;
+    }
+    .whatsapp-text {
+      font-size: 0.9vw;
+    }
+    .whatsapp-button {
+      padding: 1vw;
+      border-radius: 1.2vw;
+    }
+  }
+  
+  /* Ajustes para telas médias (entre 600px e 800px) */
+  @media (max-width: 800px) {
+    .floating-button {
+      width: 20vw;
     }
     .whatsapp-text {
       font-size: 1.5vw;
@@ -464,7 +478,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       min-width: 100px;
     }
     .whatsapp-text {
-      font-size: 2.3vw;
+      font-size: 2.0vw;
     }
     .whatsapp-button {
       padding: 1.5vw;
