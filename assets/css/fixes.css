@@ -1,0 +1,163 @@
+/*
+ * fixes.css — Correções prioritárias para drcarloslira.com.br
+ * Adicione este arquivo APÓS o style.css original.
+ *
+ * Conteúdo:
+ *  1. Badge CRM/RQE no sidebar
+ *  2. Botão flutuante WhatsApp (corrigido de vw para px/rem)
+ *  3. Footer com identificação profissional
+ *  4. Botão de agendamento na página de contato
+ *  5. Links nas especialidades
+ *  6. Typo fix "Tratamendo" → corrigido no HTML
+ */
+
+
+/* ==========================================================
+   1. BADGE CRM/RQE — exibido abaixo do título no sidebar
+   ========================================================== */
+
+.crm-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 12px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: hsl(45, 100%, 72%);
+  background: hsla(45, 100%, 72%, 0.1);
+  border: 1px solid hsla(45, 100%, 72%, 0.25);
+  border-radius: 6px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+/* ==========================================================
+   2. BOTÃO FLUTUANTE WHATSAPP — tamanhos em px/rem
+   Antes: usava vw (ilegível em mobile).
+   Agora: tamanhos fixos que funcionam em todos os dispositivos.
+   ========================================================== */
+
+.floating-button {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.floating-button:hover {
+  transform: scale(1.05);
+}
+
+.floating-button a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background-color: #1BD741;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 16px rgba(27, 215, 65, 0.35);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.floating-button .fab-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.floating-button .fab-text {
+  white-space: nowrap;
+}
+
+/* Em telas pequenas, esconde o texto e mostra só o ícone */
+@media (max-width: 580px) {
+  .floating-button a {
+    padding: 14px;
+    border-radius: 50%;
+  }
+  .floating-button .fab-text {
+    display: none;
+  }
+}
+
+
+/* ==========================================================
+   3. FOOTER — identificação profissional (CFM)
+   ========================================================== */
+
+.site-footer {
+  background: hsl(240, 2%, 12%);
+  border-top: 1px solid hsl(0, 0%, 22%);
+  padding: 20px 24px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.site-footer .footer-content p {
+  font-size: 0.75rem;
+  color: hsl(0, 0%, 60%);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.site-footer .footer-content p:first-child {
+  font-weight: 500;
+  color: hsl(0, 0%, 75%);
+}
+
+
+/* ==========================================================
+   4. BOTÃO DE AGENDAMENTO — página de contato
+   ========================================================== */
+
+.btn-agendar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: #1BD741;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-agendar:hover {
+  background: #16c238;
+  transform: translateY(-1px);
+}
+
+
+/* ==========================================================
+   5. LINKS NAS ESPECIALIDADES
+   ========================================================== */
+
+.service-item-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.service-item-title a:hover {
+  color: hsl(45, 100%, 72%);
+}
+
+.service-item-text a {
+  color: hsl(45, 100%, 72%);
+  text-decoration: none;
+}
+
+.service-item-text a:hover {
+  text-decoration: underline;
+}

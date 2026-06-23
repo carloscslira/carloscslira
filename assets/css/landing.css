@@ -1,0 +1,269 @@
+/*
+ * landing.css — Estilos das landing pages de campanha
+ * Usado por: /paginas/neurocirurgia-vascular/, /paginas/coluna/, etc.
+ */
+
+.landing-page {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  color: hsl(0, 0%, 90%);
+  background: hsl(240, 2%, 13%);
+  min-height: 100vh;
+}
+
+/* HEADER */
+.landing-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: hsla(240, 2%, 13%, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid hsl(0, 0%, 20%);
+}
+
+.landing-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  gap: 12px;
+}
+
+.landing-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.landing-logo img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.landing-logo strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 95%);
+}
+
+.landing-logo span {
+  display: block;
+  font-size: 0.65rem;
+  color: hsl(45, 100%, 72%);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.btn-agendar-sm {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #1BD741;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.btn-agendar-sm:hover {
+  background: #16c238;
+}
+
+/* HERO */
+.landing-hero {
+  padding: 48px 24px 40px;
+  text-align: center;
+  border-bottom: 1px solid hsl(0, 0%, 18%);
+}
+
+.landing-hero h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 98%);
+  margin: 0 0 16px;
+  line-height: 1.3;
+}
+
+.landing-hero p {
+  font-size: 0.95rem;
+  color: hsl(0, 0%, 65%);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+
+.landing-hero .btn-agendar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: #1BD741;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 20px rgba(27, 215, 65, 0.3);
+}
+
+.landing-hero .btn-agendar:hover {
+  background: #16c238;
+  transform: translateY(-2px);
+}
+
+/* CONTENT */
+.landing-content {
+  padding: 40px 24px;
+}
+
+.landing-content h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(45, 100%, 72%);
+  margin: 36px 0 12px;
+}
+
+.landing-content h2:first-child {
+  margin-top: 0;
+}
+
+.landing-content p {
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 70%);
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+/* CONDITION CARDS */
+.condition-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+@media (min-width: 580px) {
+  .condition-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.condition-card {
+  background: hsl(240, 2%, 17%);
+  border: 1px solid hsl(0, 0%, 20%);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.condition-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 95%);
+  margin: 0 0 8px;
+}
+
+.condition-card p {
+  font-size: 0.82rem;
+  color: hsl(0, 0%, 60%);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA SECTION */
+.landing-cta {
+  text-align: center;
+  padding: 40px 24px;
+  background: hsl(240, 2%, 10%);
+  border-top: 1px solid hsl(0, 0%, 18%);
+}
+
+.landing-cta h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 98%);
+  margin: 0 0 12px;
+}
+
+.landing-cta p {
+  font-size: 0.85rem;
+  color: hsl(0, 0%, 60%);
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+.landing-cta .btn-agendar {
+  display: inline-flex;
+  padding: 14px 32px;
+  background: #1BD741;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 20px rgba(27, 215, 65, 0.3);
+}
+
+.landing-cta .btn-agendar:hover {
+  background: #16c238;
+  transform: translateY(-2px);
+}
+
+.landing-phone {
+  margin-top: 16px !important;
+  font-size: 0.8rem !important;
+}
+
+.landing-phone a {
+  color: hsl(45, 100%, 72%);
+  text-decoration: none;
+}
+
+.landing-phone a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.landing-footer {
+  padding: 24px;
+  text-align: center;
+  border-top: 1px solid hsl(0, 0%, 18%);
+}
+
+.landing-footer p {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 50%);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.landing-footer p:first-child {
+  font-weight: 500;
+  color: hsl(0, 0%, 65%);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .landing-hero h1 {
+    font-size: 1.35rem;
+  }
+
+  .landing-header-inner {
+    padding: 10px 16px;
+  }
+
+  .landing-logo span {
+    display: none;
+  }
+}
